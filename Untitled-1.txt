@@ -1,0 +1,15 @@
+// ... existing code ...
+import android.graphics.Bitmap
+import android.graphics.ColorMatrix
+import android.graphics.ColorMatrixColorFilter
+import android.widget.ImageView
+
+fun applyFilter(imageView: ImageView, bitmap: Bitmap) {
+    val colorMatrix = ColorMatrix()
+    colorMatrix.setSaturation(0f) // Example: Apply grayscale filter
+
+    val filter = ColorMatrixColorFilter(colorMatrix)
+    imageView.colorFilter = filter
+    imageView.setImageBitmap(bitmap)
+}
+// ... existing code ...
