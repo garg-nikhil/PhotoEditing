@@ -287,4 +287,7 @@ function EditingTools({ editingState, onEditingChange, image }) {
         </Grid>
       </Grid>
     </Paper>
- 
+  );
+}
+
+export default EditingTools;
